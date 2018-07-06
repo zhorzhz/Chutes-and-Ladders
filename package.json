@@ -1,0 +1,22 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "description": "Chutes and Ladders",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run read && node ./index.js",
+    "test": "npm run read -- --in=test.txt && ava --verbose ./src/test.js",
+    "read": "node ./src/read.js"
+  },
+  "author": "Zhorzh Zakaryan",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "lodash": "^4.17.10",
+    "minimist": "^1.2.0",
+    "text-2-json": "^1.0.4"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0"
+  }
+}
