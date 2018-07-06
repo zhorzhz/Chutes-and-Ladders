@@ -13,8 +13,7 @@
   "dependencies": {
     "fs": "0.0.1-security",
     "lodash": "^4.17.10",
-    "minimist": "^1.2.0",
-    "text-2-json": "^1.0.4"
+    "minimist": "^1.2.0"
   },
   "devDependencies": {
     "ava": "^0.25.0"
