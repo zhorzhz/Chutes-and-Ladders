@@ -87,8 +87,6 @@ const start_analysing = () => {
                 not_soved_boards++;         //-- update number of board which we couldn't solve
                 break;
             }
-            
-            // console.log(`One Roll Done - position: ${position} - steps: ${rolls}`);
         }
     });
     console.timeEnd("challenge");
