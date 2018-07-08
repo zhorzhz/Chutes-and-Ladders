@@ -8,6 +8,7 @@ Results of Challenge:
 
 1. 1911;
 2. 44942;
+3. 53;
 
 # Usage
 
