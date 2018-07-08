@@ -27,6 +27,12 @@ const start_analysing = () => {
                 .filter(extra => extra.type === "C")
                 .map("end")
                 .value();
+
+            let all_ladders = _
+                .chain(extras)
+                .filter(extra => extra.type === "L")
+                .map("start")
+                .value();
             
             //-- Try to find nearest ladder
             let ladder = _
@@ -54,8 +60,8 @@ const start_analysing = () => {
                     .chain([1, 2, 3, 4, 5, 6])
                     .filter(possible_step => {
                         //-- Make sure to not cross final position, (so our current position + steps <= final position)
-                        //-- Avoid from touching chutes
-                        return position + possible_step <= final_position && !_.includes(all_chutes, position + possible_step);
+                        //-- Avoid from touching chutes and not-valuable ladders
+                        return position + possible_step <= final_position && !_.includes(all_chutes, position + possible_step) && !_.includes(all_ladders, position + possible_step);
                     })
                     .max()
                     .value();
