@@ -6,8 +6,8 @@ Below are shown results for [chutes_and_ladders.txt](https://gist.githubusercont
 
 Results of Challenge:
 
-1. 1910;
-2. 44888;
+1. 1911;
+2. 44942;
 
 # Usage
 
